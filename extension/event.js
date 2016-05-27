@@ -1,7 +1,7 @@
 function cssCode() {
     return localStorage.disabled ?
         "img, video, embed {  -webkit-filter: none; } ":
-        "img, video, embed {  -webkit-filter: invert(100%) grayscale(100%); } ";
+        "img, video, embed {  -webkit-filter: invert(100%); } ";
 }
 function insertCSS(tabId) {
     chrome.tabs.insertCSS(tabId, {
